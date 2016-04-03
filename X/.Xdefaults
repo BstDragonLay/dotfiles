@@ -54,8 +54,8 @@ URxvt.url-select.button: 1
 *color8:        #252D43
 
 ! red
-*color1:        #B00D3D
-*color9:        #B3395D
+*color1:        #E3114E
+*color9:        #B20D33
 
 ! green
 *color2:        #396F07

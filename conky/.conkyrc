@@ -9,8 +9,8 @@ use_spacer none
 ☀ ${exec xbacklight | cut -c1-3}% \
 
 TEXT
+🔉 ${exec status} \
 🌐 ${wireless_essid wlp6s0} ${wireless_link_qual wlp6s0} \
-🔉 ${exec amixer sget Master | grep "Front Left:" | cut -d " " -f7 | sed -e 's/[^0-9]*//g' } \
 ${if_match ${battery_percent} < 100}🔋 ${battery_percent}% $endif\
 ⏲ ${time %b %d %I:%M%P} | \
 🐲 ~/acg;${if_match ${exec notif count} > 0}(${exec notif count})$endif
