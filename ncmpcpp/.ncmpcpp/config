@@ -169,9 +169,9 @@ message_delay_time = "3"
 ## Note: colors can be nested.
 ##
 #
-song_list_format = "{$5%a} $2»$8»$5» {$8%t}|{$8%f}$R{$2%b}"
+song_list_format = "{$7%a} $2»$8»$7» {$8%t}|{$8%f}$R{$2%b}"
 #
-song_status_format = "{$8%a} $2»$8»$5» $b{$8%b}$/b"
+song_status_format = "{$8%a} $2»$8»$7» $b{$8%b}$/b"
 #
 song_library_format = "{%n - }{%t}|{%f}"
 #
