@@ -1,5 +1,5 @@
-.mpd/mpd.log
-.mpd/mpdstate
+mpd/.mpd/mpd.log
+mpd/.mpd/mpdstate
 
 ranger/.config/ranger/colorschemes/__init__.py
 ranger/.config/ranger/colorschemes/__init__.pyo
