@@ -1,0 +1,87 @@
+URxvt.termName: screen-256color
+
+URxvt.intensityStyles: false
+URxvt.scrollBar: false
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt*font: xft:Inconsolata\ for\ Powerline:regular:size=10:antialias=true:hinting=true
+
+URxvt.internalBorder: 20
+URxvt.shading:		15
+
+
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+URxvt.perl-ext-common: default,matcher,clipboard,keyboard-select,url-select
+URxvt.url-launcher: /usr/bin/google-chrome-stable
+URxvt.urlButton: 1
+URxvt.underlineURLs: True
+
+URxvt.clipboard.autocopy: true
+URxvt.clipboard.copycmd: xclip -in -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+
+! Keybindings
+URxvt.keysym.Mod4-c: perl:clipboard:copy
+URxvt.keysym.Mod4-v: perl:clipboard:paste
+URxvt.keysym.Mod4-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.C-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.button: 1
+
+
+! To only apply colors to your terminal, for example, prefix
+! the color assignment statement with its name. Example:
+!
+! URxvt*background:            S_base03
+
+*background:    #192033
+*foreground:    #FFFFFF
+
+! black
+*color0:        #192033
+*color8:        #252D43
+
+! red
+*color1:        #B00D3D
+*color9:        #B3395D
+
+! green
+*color2:        #396F07
+*color10:       #64AD21
+
+! yellow
+*color3:        #CFCD3B
+*color11:       #FCEC6D
+
+! blue
+*color4:        #3465A4
+*color12:       #729FCF
+
+! magenta
+*color5:        #75507B
+*color13:       #AD7FA8
+
+! cyan
+*color6:        #06989A
+*color14:       #34E2E2
+
+! white
+*color7:        #D3D7CF
+*color15:       #EEEEEC
+
+!Colored man pages
+URxvt.colorIT:  #9f8fbc
+URxvt.colorBD:  #9bc4bd
+URxvt.colorUL:  #b7ce42

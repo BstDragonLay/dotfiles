@@ -1,0 +1,106 @@
+sw_volume: 0
+audio_device_state:1:Dispositivo ALSA
+audio_device_state:1:Streaming
+audio_device_state:1:visualizer
+state: play
+current: 50
+time: 120.128000
+random: 1
+repeat: 1
+single: 0
+consume: 1
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:[youshikibi] AKB48 - Koi Suru Fortune Cookie (All Types) [2013.08.21] (320k VBR)/2b. Saigo no Door.mp3
+1:[youshikibi] AKB48 - Koi Suru Fortune Cookie (All Types) [2013.08.21] (320k VBR)/3b. Namida no Sei ja nai.mp3
+2:[youshikibi] AKB48 - Koi Suru Fortune Cookie (All Types) [2013.08.21] (320k VBR)/3t. Aozora Café.mp3
+3:[youshikibi] AKB48 - Koi Suru Fortune Cookie (All Types) [2013.08.21] (320k VBR)/04. Koi Suru Fortune Cookie (off vocal ver.).mp3
+4:nihon/アクア タイムズ - ALONES [mqms2].mp3
+5:nihon/AZU - Love letter～君がいるから～ [mqms2].m4a
+6:nihon/CHiCO with HoneyWorks - 世界は恋に落ちている [mqms2].mp3
+7:nihon/egoist - ~あなたにおくるアイの歌~ [mqms2].mp3
+8:nihon/ELISA - ebullient future [mqms2].mp3
+9:nihon/カナブーン - シルエット [mqms2].mp3
+10:kashiwa daisuke/Kashiwa Daisuke - Re:/01 april.#19.mp3
+11:kashiwa daisuke/Kashiwa Daisuke - Re:/04 Jazz pour une infante defunte.mp3
+12:kashiwa daisuke/Kashiwa Daisuke - Re:/08 Ajanagar.mp3
+13:kashiwa daisuke/Kashiwa Daisuke - Re:/10 colophon.#02.mp3
+14:nihon/Key Sounds Label - いちばんのたからもの [mqms2].mp3
+15:[youshikibi] Luna Haruna - OVERSKY [2013.08.21] (320k VBR MP3)/03. Clumsydays.mp3
+16:[youshikibi] Luna Haruna - OVERSKY [2013.08.21] (320k VBR MP3)/04. Binetsu no Tsuki.mp3
+17:[youshikibi] Luna Haruna - OVERSKY [2013.08.21] (320k VBR MP3)/05. Neverland.mp3
+18:[youshikibi] Luna Haruna - OVERSKY [2013.08.21] (320k VBR MP3)/06. Boku to iu Kimi e.mp3
+19:[youshikibi] Luna Haruna - OVERSKY [2013.08.21] (320k VBR MP3)/08. Kyousou Refrain.mp3
+20:[youshikibi] Luna Haruna - OVERSKY [2013.08.21] (320k VBR MP3)/09. Shuuen no Mahou, Shuuten no Shini.mp3
+21:[youshikibi] Luna Haruna - OVERSKY [2013.08.21] (320k VBR MP3)/11. Sora wa Takaku Kaze wa Utau.mp3
+22:naruto/Naruto Original Soundtrack 3/5 - Rock Lees Theme.mp3
+23:naruto/Naruto Shippuden Original Soundtrack 1/2 - Heaven-Shaking Event.mp3
+24:nihon/Rakira - Tsuki Akari [mqms2].m4a
+25:Gazelle/Sayonara Memories/05. Oshiete Ageru -Instrumental-.mp3
+26:supercell/Giniro Hikousen/01 - Giniro Hikousen.mp3
+27:supercell/Giniro Hikousen/05 - Rirumore (Instrumental).mp3
+28:supercell/Hakushu Kassai Utaawase/03. 夕焼けブルース.mp3
+29:supercell/Hakushu Kassai Utaawase/04. 拍手喝采歌合 (TV Edit).mp3
+30:supercell/Hakushu Kassai Utaawase/08. 拍手喝采歌合 (TV Edit) -Instrumental-.mp3
+31:supercell/Kimi no Shiranai Monogatari/03 Theme of CENCOROLL.mp3
+32:supercell/Kimi no Shiranai Monogatari/04 Kimi no Shiranai Monogatari -TV Edit-.mp3
+33:supercell/Kimi no Shiranai Monogatari/05 Kimi no Shiranai Monogatari -Instrumental-.mp3
+34:supercell/Kokuhaku - Bokura no Ashiato/01 Kokuhaku.mp3
+35:supercell/Kokuhaku - Bokura no Ashiato/03 Kare.mp3
+36:supercell/Kokuhaku - Bokura no Ashiato/04 Kokuhaku (TV Edit).mp3
+37:supercell/Kokuhaku - Bokura no Ashiato/05 Kokuhaku -Instrumental-.mp3
+38:supercell/Kokuhaku - Bokura no Ashiato/06 Kare -Instrumental-.mp3
+39:supercell/My Dearest/04 My Dearest (TV Version).mp3
+40:supercell/My Dearest/05 My Dearest (Instrumental).mp3
+41:supercell/My Dearest/06 Zainin (Instrumental).mp3
+42:supercell/Sayonara Memories/04 Sayonara Memories -Instrumental-.mp3
+43:supercell/Supercell/01 Koi wa Sensō.mp3
+44:supercell/Supercell/08 Hajimete no Koi ga Owaru Toki.mp3
+45:supercell/Supercell/09 Usotsuki no Parade.mp3
+46:supercell/The Bravery/The Bravery.mp3
+47:supercell/The Bravery/青空.mp3
+48:supercell/The Bravery/The Bravery -Instrumental-.mp3
+49:supercell/Today is a Beautiful Day/01 Owari e Mukau Hajimari no Uta.mp3
+50:supercell/Today is a Beautiful Day/03 Hero.mp3
+51:supercell/Today is a Beautiful Day/05 Fukushuu.mp3
+52:supercell/Today is a Beautiful Day/11 Yoru ga Akeru yo.mp3
+53:supercell/Utakata Hanabi/01 Utakata Hanabi.mp3
+54:supercell/Utakata Hanabi/03 Worldwide love.mp3
+55:supercell/Utakata Hanabi/05 Hoshi ga matataku konna yoru ni -Instrumental-.mp3
+56:supercell/Utakata Hanabi/06 Worldwide Love -Instrumental-.mp3
+57:Supercell/Guilty Crown OP1 - My Dearest/07. Dai Hinmin (Instrumental).mp3
+58:nihon/THE ORAL CIGARETTES - 狂乱 Hey Kids!! [mqms2].mp3
+59:naruto/Naruto Original Soundtrack 1/2 - I Said I'm Naruto.mp3
+60:naruto/Naruto Original Soundtrack 1/3 - Nine Tail Demon Fox.mp3
+61:naruto/Naruto Original Soundtrack 1/4 - Morning.mp3
+62:naruto/Naruto Original Soundtrack 1/5 - Naruto's Daily Life.mp3
+63:naruto/Naruto Original Soundtrack 1/7 - The Raising Fighting Spirit.mp3
+64:naruto/Naruto Original Soundtrack 1/8 - Sadness And Sorrow.mp3
+65:naruto/Naruto Original Soundtrack 1/11 - Kakashi's Theme.mp3
+66:naruto/Naruto Original Soundtrack 1/12 - Sexiness.mp3
+67:naruto/Naruto Original Soundtrack 1/14 - Evening.mp3
+68:naruto/Naruto Original Soundtrack 1/17 - Bad Situation.mp3
+69:naruto/Naruto Original Soundtrack 1/18 - Strong And Strike.mp3
+70:naruto/Naruto Original Soundtrack 1/19 - Turn Over.mp3
+71:naruto/Naruto Original Soundtrack 1/20 - Victory.mp3
+72:naruto/Naruto Original Soundtrack 2/2 - Daylight of Konoha.mp3
+73:naruto/Naruto Original Soundtrack 2/6 - Survival Examination.mp3
+74:naruto/Naruto Original Soundtrack 2/7 - Afternoon of Konoha.mp3
+75:naruto/Naruto Original Soundtrack 2/8 - Fooling Mode.mp3
+76:naruto/Naruto Original Soundtrack 2/10 - It's the training!.mp3
+77:naruto/Naruto Original Soundtrack 2/14 - Avenger.mp3
+78:naruto/Naruto Original Soundtrack 2/15 - Orochimaru ~Fight~.mp3
+79:naruto/Naruto Original Soundtrack 3/4 - A Crisis After Another.mp3
+80:naruto/Naruto Original Soundtrack 3/16 - Ripple.mp3
+81:naruto/Naruto Original Soundtrack 3/1 - Beautiful Green Wild Beast.mp3
+82:naruto/Naruto Original Soundtrack 3/2 - Sakura Season.mp3
+83:naruto/Naruto Original Soundtrack 3/8 - Ill Do It Right.mp3
+84:nihon/TVサントラ - euphoric field [mqms].m4a
+85:nihon/YA-KYIM - BAKUROCK ~未来の輪郭線~ [mqms2].mp3
+86:nihon/いとうかなこ - Hacking to the Gate [mqms2].mp3
+87:nihon/林原めぐみ - Northern lights [mqms].m4a
+88:nihon/いきものがかり - ブルーバード [mqms2].mp3
+89:nihon/茅野愛衣中津真莉子高森奈津美 - 君が夢を連れてきた [mqms2].mp3
+playlist_end

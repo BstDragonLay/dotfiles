@@ -1,0 +1,16 @@
+out_to_console yes
+out_to_x no
+background no
+update_interval 1
+total_run_times 0
+use_spacer none
+
+🎧 ${mpd_smart 30} | \
+☀ ${exec xbacklight | cut -c1-3}% \
+
+TEXT
+🌐 ${wireless_essid wlp6s0} ${wireless_link_qual wlp6s0} \
+🔉 ${exec amixer sget Master | grep "Front Left:" | cut -d " " -f7 | sed -e 's/[^0-9]*//g' } \
+${if_match ${battery_percent} < 100}🔋 ${battery_percent}% $endif\
+⏲ ${time %b %d %I:%M%P} | \
+🐲 ~/acg;${if_match ${exec notif count} > 0}(${exec notif count})$endif

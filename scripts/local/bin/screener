@@ -1,0 +1,1 @@
+scrot -s -d 1 /home/$USER/Imágenes/screenshots/%Y-%m-%d-%I:%M::%S.png

@@ -1,0 +1,1 @@
+/home/ryuunosuke/.vimrc
