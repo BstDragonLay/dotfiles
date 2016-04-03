@@ -1,2 +1,6 @@
-.dropbox
 .mpd/mpd.log
+.mpd/mpdstate
+
+ranger/.config/ranger/colorschemes/__init__.py
+ranger/.config/ranger/colorschemes/__init__.pyo
+ranger/.config/ranger/colorschemes/gnamerica.pyo
