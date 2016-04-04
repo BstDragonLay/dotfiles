@@ -9,8 +9,8 @@ use_spacer none
 ☀ ${exec xbacklight | cut -c1-3}% \
 
 TEXT
+⏲ ${time %d·%m·%H:%M} \
 🔉 ${exec status} \
 🌐 ${wireless_essid wlp6s0} ${wireless_link_qual wlp6s0} \
 ${if_match ${battery_percent} < 100}🔋 ${battery_percent}% $endif\
-⏲ ${time %b %d %I:%M%P} | \
 🐲 ~/acg;${if_match ${exec notif count} > 0}(${exec notif count})$endif

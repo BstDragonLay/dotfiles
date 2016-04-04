@@ -7,8 +7,14 @@ case "$ARG" in
       ;;
   count) echo $(wc -l $FILE | awk '{print $1}')
       ;;
-  irc) echo $(date) - New IRC Message! >> $FILE
-      twmnc -t IRC -c "New message!" --pos bottom_right
+  irc) USER=$2
+#      echo user: $USER
+      shift 2
+#      echo $@
+      MESSAGE=$@
+#      echo Message: $MESSAGE
+      echo $(date) IRC MESSAGE - $USER : "$MESSAGE" >> $FILE
+      twmnc -d 4000 -t "IRC - $USER" -c "$(echo $MESSAGE | cut -c1-50)" --pos bottom_right
       ;;
   mpd_current) twmnc -d 1000 --pos bottom_left -t MPD -c "$(mpc current)"
       ;;

@@ -85,3 +85,6 @@ URxvt.url-select.button: 1
 URxvt.colorIT:  #9f8fbc
 URxvt.colorBD:  #9bc4bd
 URxvt.colorUL:  #b7ce42
+
+dzen2.background: #192033
+dzen2.foreground: #D3D7CF
