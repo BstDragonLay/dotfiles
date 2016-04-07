@@ -1,11 +1,14 @@
-URxvt.termName: screen-256color
+URxvt*termName: rxvt-unicode
 
 URxvt.intensityStyles: false
 URxvt.scrollBar: false
 URxvt.iso14755: false
 URxvt.iso14755_52: false
+URxvt*utf-8: 1
+URxvt*imLocale: es_ES.utf-8
 
-URxvt*font: xft:Inconsolata\ for\ Powerline:regular:size=10:antialias=true:hinting=true
+!URxvt*font: xft:Inconsolata:regular:size=10:antialias=true:hinting=true
+URxvt*font: xft:DejaVu\ Sans\ Mono:regular:size=9:antialias=true:hinting=true
 
 URxvt.internalBorder: 20
 URxvt.shading:		15
@@ -19,7 +22,7 @@ Xft.antialias: 1
 Xft.rgba: rgb
 
 URxvt.perl-ext-common: default,matcher,clipboard,keyboard-select,url-select
-URxvt.url-launcher: /usr/bin/google-chrome-stable
+URxvt.url-launcher: /usr/bin/firefox
 URxvt.urlButton: 1
 URxvt.underlineURLs: True
 
