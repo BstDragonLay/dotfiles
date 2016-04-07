@@ -1,4 +1,6 @@
 set nocompatible
+scriptencoding utf-8
+set encoding=utf-8
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim/
@@ -20,7 +22,7 @@ let mapleader = " "
 
 " ===== PERSONAL =====
 set background=dark
-colorscheme acg
+"colorscheme acg
 
 set number
 set numberwidth=4

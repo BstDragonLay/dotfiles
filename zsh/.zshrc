@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/ryuunosuke/.oh-my-zsh
+export ZSH=/home/acg/.oh-my-zsh
 
 #xrdb ~/.Xdefaults
 # Set name of the theme to load.
@@ -60,7 +60,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=es_PA.utf-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -128,5 +128,5 @@ export PYTHONUSERBASE="$HOME/local"
 
 export PATH="$HOME/local/bin:$PATH"
 
-export NVM_DIR="/home/ryuunosuke/.nvm"
+export NVM_DIR="/home/acg/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
