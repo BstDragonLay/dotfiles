@@ -1,7 +1,10 @@
-#twmnd &
-#feh --bg-scale /home/ryuunosuke/Imágenes/pokemix.png &
+twmnd &
+#feh --bg-scale /home/acg/Imágenes/pokemix.png &
+feh --bg-scale /home/acg/Imágenes/wallpapers/solarized.png &
 setxkbmap -layout latam &
 setxkbmap latam &
-#exec ~/.statusbar
-exec ~/local/bin/startdwm
+statusbar &
+xset -dpms &
+#(conky | while read LINE; do xsetroot -name "$LINE"; done) &
+startdwm
 #exec dwm

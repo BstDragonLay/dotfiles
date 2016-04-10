@@ -7,8 +7,8 @@ URxvt.iso14755_52: false
 URxvt*utf-8: 1
 URxvt*imLocale: es_ES.utf-8
 
-!URxvt*font: xft:Inconsolata:regular:size=10:antialias=true:hinting=true
-URxvt*font: xft:DejaVu\ Sans\ Mono:regular:size=9:antialias=true:hinting=true
+URxvt*font: xft:Inconsolata:regular:size=12:antialias=true:hinting=true
+!URxvt*font: xft:DejaVu\ Sans\ Mono:regular:size=9:antialias=false:hinting=true
 
 URxvt.internalBorder: 20
 URxvt.shading:		15
@@ -49,45 +49,103 @@ URxvt.url-select.button: 1
 !
 ! URxvt*background:            S_base03
 
-*background:    #192033
-*foreground:    #FFFFFF
+!*background:    #192033
+!*foreground:    #FFFFFF
 
 ! black
-*color0:        #192033
-*color8:        #252D43
+!*color0:        #192033
+!*color8:        #252D43
 
 ! red
-*color1:        #E3114E
-*color9:        #B20D33
+!*color1:        #E3114E
+!*color9:        #B20D33
 
 ! green
-*color2:        #396F07
-*color10:       #64AD21
+!*color2:        #396F07
+!*color10:       #64AD21
 
 ! yellow
-*color3:        #CFCD3B
-*color11:       #FCEC6D
+!*color3:        #CFCD3B
+!*color11:       #FCEC6D
 
 ! blue
-*color4:        #3465A4
-*color12:       #729FCF
+!*color4:        #3465A4
+!*color12:       #729FCF
 
 ! pink/purple
-*color5:        #93206A
-*color13:       #D62F9B
+!*color5:        #93206A
+!*color13:       #D62F9B
 
 ! cyan
-*color6:        #06989A
-*color14:       #34E2E2
+!*color6:        #06989A
+!*color14:       #34E2E2
 
 ! white
-*color7:        #D3D7CF
-*color15:       #EEEEEC
+!*color7:        #D3D7CF
+!*color15:       #EEEEEC
 
 !Colored man pages
-URxvt.colorIT:  #9f8fbc
-URxvt.colorBD:  #9bc4bd
-URxvt.colorUL:  #b7ce42
+!URxvt.colorIT:  #9f8fbc
+!URxvt.colorBD:  #9bc4bd
+!URxvt.colorUL:  #b7ce42
+
+
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+
+*background:            S_base03
+*foreground:            S_base00
+*fading:                40
+*fadeColor:             S_base03
+*cursorColor:           S_base1
+*pointerColorBackground:S_base01
+*pointerColorForeground:S_base1
+
+!! black dark/light
+*color0:                S_base02
+*color8:                S_base03
+
+!! red dark/light
+*color1:                S_red
+*color9:                S_orange
+
+!! green dark/light
+*color2:                S_green
+*color10:               S_base01
+
+!! yellow dark/light
+*color3:                S_yellow
+*color11:               S_base00
+
+!! blue dark/light
+*color4:                S_blue
+*color12:               S_base0
+
+!! magenta dark/light
+*color5:                S_magenta
+*color13:               S_violet
+
+!! cyan dark/light
+*color6:                S_cyan
+*color14:               S_base1
+
+!! white dark/light
+*color7:                S_base2
+*color15:               S_base3
 
 dzen2.background: #192033
 dzen2.foreground: #D3D7CF

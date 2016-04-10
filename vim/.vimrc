@@ -23,6 +23,7 @@ let mapleader = " "
 " ===== PERSONAL =====
 set background=dark
 "colorscheme acg
+colorscheme solarized
 
 set number
 set numberwidth=4
@@ -122,12 +123,4 @@ let g:tmux_navigator_save_on_switch = 1
 
 "==== NERDTree ====
 "map <C-n> :NERDTreeToggle<cr>
-
-" === UltiSnips ===
-"let g:UltiSnipsExpandTrigger = "<C-space>"
-
-" === NeoComplete ===
-"let g:neocomplete#enable_at_startup=1
-"let g:neocompelte#sources#syntax#min_keyword_length=3
-
 set t_Co=256
