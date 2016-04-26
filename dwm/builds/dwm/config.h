@@ -4,15 +4,27 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"Inconsolata:size=12"
+	"xft:terminus:pixelsize=14"
 };
-static const char dmenufont[]       = "xft:Inconsolata:size=12";
-static const char normbordercolor[] = "#252D43";
+static const char dmenufont[]       = "-*-terminus-medium-*-*-*-14-*-*-*-*-*-*-1";
+/*static const char normbordercolor[] = "#252D43";
 static const char normbgcolor[]     = "#192033";
 static const char normfgcolor[]     = "#D3D7CF";
 static const char selbordercolor[]  = "#06989A";
 static const char selbgcolor[]      = "#252D43";
-static const char selfgcolor[]      = "#D3D7CF";
+static const char selfgcolor[]      = "#D3D7CF";*/
+/*static const char normbordercolor[] = "#073642";
+static const char normbgcolor[]     = "#073642";
+static const char normfgcolor[]     = "#b58900";
+static const char selbordercolor[]  = "#CB4B16";
+static const char selbgcolor[]      = "#002B36";
+static const char selfgcolor[]      = "#cb4b16";*/
+static const char normbordercolor[] = "#928374";
+static const char normbgcolor[]     = "#1d2021";
+static const char normfgcolor[]     = "#928374";
+static const char selbordercolor[]  = "#d65d0e";
+static const char selbgcolor[]      = "#282828";
+static const char selfgcolor[]      = "#d65d0e";
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 16;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -26,11 +38,15 @@ static const char colors[NUMCOLORS][MAXCOLORS][8] = {
   { "#06989A", "#D3D7CF", "#252D43"},
   */
   /*  SOLARIZED */
-  { "#073642", "#EEE8D5", "#073642" },
-  { "#CB4B16", "#EEE8D5", "#002B36"},
+  /*{ "#073642", "#EEE8D5", "#073642" },
+  { "#CB4B16", "#EEE8D5", "#002B36"},*/
+  { "#928374", "#ebdbb2", "#1d2021" },
+  { "#d65d0e", "#ebdbb2", "#282828" },
 };
 /* tagging */
-static const char *tags[] = { "🌎", "🗖", "🎞", "💬", "🖹", "6", "7", "8", "9" };
+/* static const char *tags[] = { "", "", "", "", "", "6", "7", "8", "9" };*/
+
+static const char *tags[] = { "☯", "☰", "☱", "☲", "☳", "☴", "☵", "☶", "☷" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -42,6 +58,8 @@ static const Rule rules[] = {
 	{ "google-chrome",  NULL,       NULL,       1,       0,           -1 },
 	{ "vlc",  NULL,       NULL,       1 << 2,       0,           -1 },
 	{ "Vlc",  NULL,       NULL,       1 << 2,       0,           -1 },
+	{ "Steam",  NULL,       NULL,       1 << 5,       1,           -1 },
+	{ "csgo_linux",  NULL,       NULL,       1 << 5,       1,           -1 },
 };
 
 /* layout(s) */
@@ -51,9 +69,9 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[T]",      tile },    /* first entry is default */
-	{ "[F]",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "🜖",      tile },    /* first entry is default */
+	{ "🝆",      NULL },    /* no layout function means floating behavior */
+	{ "☉",      monocle },
 };
 
 
@@ -70,12 +88,13 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, "-x", "400", "-y", "372", "-w", "566", NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *chrome[]  = { "google-chrome", NULL };
 static const char *gmrun[]  = { "gmrun", NULL };
 static const char *locker[]  = { "lock", NULL };
 static const char *screener[]  = { "screener", NULL };
+static const char *mpd_curr[]  = { "notif", "mpd_current", NULL };
 static const char *volUp[]  = { "amixer", "sset", "Master", "5%+", NULL };
 static const char *volDown[]  = { "amixer", "sset", "Master", "5%-", NULL };
 static const char *next[]  = { "mpc", "prev", NULL };
@@ -85,7 +104,6 @@ static const char *play[]  = { "mpc", "toggle", NULL };
 static const char *lightUp[]  = { "xbacklight", "-inc", "5",  NULL };
 static const char *lightDown[]  = { "xbacklight", "-dec", "5",  NULL };
 static const char *suspend[]  = { "systemctl", "suspend", NULL };
-static const char *monOff[]  = { "xset", "dpms", "force", "suspend",  NULL };
 
 
 static Key keys[] = {
@@ -95,8 +113,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_e,      spawn,          {.v = chrome } },
 	{ MODKEY|ShiftMask,             XK_r, spawn,          {.v = gmrun } },
 	{ MODKEY|ShiftMask,             XK_l, spawn,          {.v = locker } },
-	{ MODKEY,                       XK_p, spawn,          {.v = monOff } },
 	{ MODKEY|ShiftMask,             XK_p, spawn,          {.v = suspend } },
+	{ MODKEY,                       XK_p, spawn,          {.v = mpd_curr } },
   { 0,                            XK_Print,    spawn,        { .v = screener } },
   { 0,                            XF86XK_AudioPrev,    spawn,        { .v = prev } },
   { 0,                            XF86XK_AudioPlay,    spawn,        { .v = play } },
