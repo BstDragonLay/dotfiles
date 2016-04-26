@@ -6,12 +6,16 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'christoomey/vim-tmux-runner.git'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'flazz/vim-colorschemes'
-
+"Plugin 'flazz/vim-colorschemes'
+Plugin 'morhetz/gruvbox'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'valloric/youcompleteme'
+Plugin 'ervandew/supertab'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 "Required for SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -19,11 +23,12 @@ call vundle#end()
 filetype plugin indent on
 
 let mapleader = " "
-
+let g:gruvbox_contrast_dark="hard"
+let g:gruvbox_termcolors=16
 " ===== PERSONAL =====
 set background=dark
 "colorscheme acg
-colorscheme solarized
+colorscheme gruvbox
 
 set number
 set numberwidth=4
@@ -111,16 +116,12 @@ autocmd InsertLeave * call ToggleNumbersOn()
 vmap <F6> :!xclip -f -sel clip<CR>
 map <F7> :r!xclip -o -sel clip<CR>
 
-"Allow moving around between Tmux windows
-nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
-
-"tmux integration
-let g:tmux_navigator_no_mappings = 1
-let g:tmux_navigator_save_on_switch = 1
-
 "==== NERDTree ====
-"map <C-n> :NERDTreeToggle<cr>
+map <C-n> :NERDTreeToggle<cr>
+
+" ==== CtrlP ====
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
 set t_Co=256
