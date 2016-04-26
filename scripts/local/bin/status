@@ -10,7 +10,9 @@
 # Config your battery's directory
 #battery=/sys/class/power_supply/BAT1
 FULL=█
-EMPTY=░
+#EMPTY=░
+EMPTY=─
+#FULL==
 
 draw()
 {
