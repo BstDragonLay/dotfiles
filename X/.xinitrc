@@ -1,7 +1,5 @@
 twmnd &
-#feh --bg-scale /home/acg/Imágenes/pokemix.png &
-#feh --bg-scale /home/acg/Imágenes/r_wallpapers/the_observatory_cat.png &
-feh --bg-scale /home/acg/Imágenes/alphacoders/art_japan2.jpg &
+feh --bg-scale /home/acg/Imágenes/UnixPornWPs/artsyRoom.jpg &
 setxkbmap -layout latam &
 setxkbmap latam &
 statusbar &

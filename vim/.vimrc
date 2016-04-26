@@ -11,20 +11,22 @@ Plugin 'scrooloose/syntastic'
 "Plugin 'flazz/vim-colorschemes'
 Plugin 'morhetz/gruvbox'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'valloric/youcompleteme'
 Plugin 'ervandew/supertab'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'alvan/vim-closetag'
+Plugin 'rip-rip/clang_complete'
 
 "Required for SnipMate
-Plugin 'MarcWeber/vim-addon-mw-utils'
 call vundle#end()
 filetype plugin indent on
 
 let mapleader = " "
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_termcolors=16
+
 " ===== PERSONAL =====
 set background=dark
 "colorscheme acg
@@ -76,6 +78,8 @@ set formatoptions-=t
 set showcmd
 
 autocmd BufEnter * silent! cd %:p:h
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview"
 
 set laststatus=2
 
@@ -123,5 +127,19 @@ map <C-n> :NERDTreeToggle<cr>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+
+
+" ===== Syntastic =====
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" ==== vim closetag =====
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
 
 set t_Co=256

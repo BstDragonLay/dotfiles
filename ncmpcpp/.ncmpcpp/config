@@ -333,7 +333,7 @@ titles_visibility = "no"
 header_text_scrolling = "yes"
 #fancy_scrolling = "yes"
 #
-cyclic_scrolling = "no"
+cyclic_scrolling = "yes"
 #
 lines_scrolled = "5"
 #

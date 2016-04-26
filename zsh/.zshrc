@@ -91,9 +91,9 @@ export TERM=rxvt-256color
 ##
 
 ## Change this between computers
-alias dev='cd ~/Documentos/dev'
-alias blog='cd ~/Documentos/dev/albertocg.github.io'
-alias repos='cd ~/Documentos/dev/git_repos'
+alias dev='cd ~/Documentos/Dev'
+alias blog='cd ~/Documentos/Dev/albertocg.github.io'
+alias repos='cd ~/Documentos/Dev/GitRepos'
 
 alias ll='ls -lhA'
 alias ls='ls --color=auto'
