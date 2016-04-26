@@ -429,7 +429,7 @@ empty_tag_marker = "<empty>"
 #
 #media_library_sort_by_mtime = "no"
 #
-enable_window_title = "no"
+enable_window_title = "yes"
 #
 ##
 ## Note: You can choose default search mode for search
