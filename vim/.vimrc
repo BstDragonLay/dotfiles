@@ -10,7 +10,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 "Plugin 'flazz/vim-colorschemes'
 Plugin 'morhetz/gruvbox'
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'ervandew/supertab'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'scrooloose/nerdtree'
@@ -19,7 +18,12 @@ Plugin 'tpope/vim-surround'
 Plugin 'alvan/vim-closetag'
 Plugin 'rip-rip/clang_complete'
 
-"Required for SnipMate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim' 
+Plugin 'garbas/vim-snipmate'
+
+Plugin 'honza/vim-snippets'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -46,8 +50,8 @@ set ignorecase
 set smartcase
 
 "Soft tabs
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set shiftround
 set expandtab
 set smarttab
@@ -61,8 +65,8 @@ set winheight=999
 "Extra whitespace
 set list 
 set listchars=tab:»·,trail:»,nbsp:·
-     
-   
+
+
 "Line 80 mark
 set textwidth=0
 set colorcolumn=+1
