@@ -4,6 +4,5 @@ setxkbmap -layout latam &
 setxkbmap latam &
 statusbar &
 xset -dpms &
-#(conky | while read LINE; do xsetroot -name "$LINE"; done) &
+udiskie &
 startdwm
-#exec dwm
