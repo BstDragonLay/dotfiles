@@ -171,7 +171,7 @@ message_delay_time = "3"
 #
 song_list_format = "{$7%a} $2»$8»$7» {$8%t}|{$8%f}$R{$2%b}"
 #
-song_status_format = "{$8%a} $2»$8»$7» $b{$8%b}$/b"
+song_status_format = "{$8%a} $2»$8»$7» $b{$8%t}$/b"
 #
 song_library_format = "{%n - }{%t}|{%f}"
 #

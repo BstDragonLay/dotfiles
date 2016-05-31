@@ -8,15 +8,14 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
-"Plugin 'flazz/vim-colorschemes'
 Plugin 'morhetz/gruvbox'
 Plugin 'ervandew/supertab'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
-Plugin 'alvan/vim-closetag'
 Plugin 'rip-rip/clang_complete'
+Plugin 'ervandew/matchem'
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim' 
@@ -33,7 +32,6 @@ let g:gruvbox_termcolors=16
 
 " ===== PERSONAL =====
 set background=dark
-"colorscheme acg
 colorscheme gruvbox
 
 set number
