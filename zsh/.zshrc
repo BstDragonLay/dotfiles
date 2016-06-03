@@ -94,6 +94,7 @@ export TERM=rxvt-256color
 alias dev='cd ~/Documentos/Dev'
 alias blog='cd ~/Documentos/Dev/albertocg.github.io'
 alias repos='cd ~/Documentos/Dev/GitRepos'
+alias dailies='cd ~/Dropbox/Control'
 
 alias ll='ls -lhA'
 alias ls='ls --color=auto'
@@ -127,6 +128,8 @@ export EDITOR='vim'
 export PYTHONUSERBASE="$HOME/local"
 
 export PATH="$HOME/local/bin:$PATH"
+export MAIL="$HOME/var/mail/INBOX"
+export VISUAL="vim"
 
 export NVM_DIR="/home/acg/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
