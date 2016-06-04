@@ -105,10 +105,10 @@ alias c='clear'
 alias reboot='sudo reboot'
 
 # requires pandoc
-alias 2html = 'pandoc -t html -o'
-alias 2md = 'pandoc -t markdown_github -o'
-alias 2docx = 'pandoc -t docx -o'
-alias 2pdf = 'pandoc -t latex -o'
+alias tohtml='pandoc -t html -o' 
+alias tomd='pandoc -t markdown_github -o' 
+alias todocx='pandoc -t docx -o' 
+alias topdf='pandoc -t latex -o'
 
 ## Fedora specific install
 alias install='sudo dnf install'
