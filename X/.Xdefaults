@@ -1,6 +1,9 @@
 URxvt*termName: rxvt-unicode
+URxvt*title:    FSociety
 
-URxvt.intensityStyles: false
+URxvt*cursorBlink:  true
+
+URxvt.intensityStyles: true
 URxvt.scrollBar: false
 URxvt.iso14755: false
 URxvt.iso14755_52: false
@@ -9,10 +12,10 @@ URxvt*imLocale: es_ES.utf-8
 
 ! URxvt*font: xft:Inconsolata\ Regular:regular:size=10:antialias=true:hinting=true
 ! URxvt*font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-1
-!URxvt*font: -*-gohufont-medium-*-*-*-14-*-*-*-*-*-*-1
+! URxvt*font: -*-gohufont-medium-*-*-*-14-*-*-*-*-*-*-1
 URxvt*font: xft:DejaVu\ Sans\ Mono:regular:size=10:antialias=true:hinting=true
 
-URxvt.internalBorder: 20
+URxvt.internalBorder: 5
 URxvt.shading:		15
 
 Xft.autohint: 0
@@ -23,7 +26,7 @@ Xft.antialias: 1
 Xft.rgba: rgb
 
 URxvt.perl-ext-common: default,matcher,clipboard,keyboard-select,url-select
-URxvt.url-launcher: /usr/bin/firefox
+URxvt.url-launcher: /usr/bin/links
 URxvt.urlButton: 1
 URxvt.underlineURLs: True
 
@@ -41,7 +44,7 @@ URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.C-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.launcher: links -g
 URxvt.url-select.button: 1
 
 

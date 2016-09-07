@@ -28,7 +28,7 @@ ZSH_THEME="avit"
 DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -60,7 +60,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-export LANG=es_PA.utf-8
+export LANG=en_GB.utf-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -91,9 +91,9 @@ export TERM=rxvt-256color
 ##
 
 ## Change this between computers
-alias dev='cd ~/Documentos/Dev'
-alias blog='cd ~/Documentos/Dev/albertocg.github.io'
-alias repos='cd ~/Documentos/Dev/GitRepos'
+alias dev='cd ~/Documents/Dev'
+alias blog='cd ~/Documents/Dev/albertocg.github.io'
+alias repos='cd ~/Documents/Dev/GitRepos'
 alias dailies='cd ~/Dropbox/Control'
 
 alias ll='ls -lhA'
@@ -127,8 +127,18 @@ alias s='. ~/.tmux_session.sh'
 alias muxkill='tmux kill-session -t'
 alias muxses='tmux ls'
 
+man() {
+    env \
+        LESS_TERMCAP_mb=$'\e[01;31m' \
+        LESS_TERMCAP_md=$'\e[01;31m' \
+        LESS_TERMCAP_me=$'\e[0m' \
+        LESS_TERMCAP_se=$'\e[0m' \
+        LESS_TERMCAP_so=$'\e[01;44;33m' \
+        LESS_TERMCAP_ue=$'\e[0m' \
+        LESS_TERMCAP_us=$'\e[01;32m' \
+        man "$@"
+}
 
-#alias tmux="TERM=screen-256color-bce tmux"
 export EDITOR='vim'
 
 export PYTHONUSERBASE="$HOME/local"
@@ -139,3 +149,6 @@ export VISUAL="vim"
 
 export NVM_DIR="/home/acg/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+title FSociety

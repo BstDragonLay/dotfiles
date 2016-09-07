@@ -16,6 +16,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'rip-rip/clang_complete'
 Plugin 'ervandew/matchem'
+Plugin 'kchmck/vim-coffee-script'
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim' 

@@ -1,1 +1,2 @@
-scrot -s -d 1 /home/$USER/Imágenes/Screenshots/%Y%m%d$1.png
+# gnome-screenshot -a -f /home/$USER/Pictures/Screenshots/$(date).png
+scrot -s -d 1 /home/$USER/Pictures/Screenshots/%Y%m%d$1.png

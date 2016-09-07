@@ -124,3 +124,5 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export TERM=screen-256color
 export EDITOR=vim
 export PATH=$HOME/local/bin:$PATH
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
