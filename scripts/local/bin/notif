@@ -18,7 +18,7 @@ case "$ARG" in
       notify-send -t 4000 " IRC - $USER" "$(echo $MESSAGE | cut -c1-50)"
       ;;
   mpd_current) #twmnc -d 1000 --pos bottom_left -t "♪ MPD" -c "$(mpc current)"
-        notify-send -t 1000 "♪ MPD $(mpc current)"
+        notify-send -t 1000 "♪ MPD" "$(mpc current)"
       ;;
   view) COUNT=$(wc -l $FILE | awk '{print $1}')
        tail -n $COUNT $FILE

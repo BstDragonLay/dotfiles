@@ -6,3 +6,5 @@ ranger/.config/ranger/colorschemes/__init__.pyo
 ranger/.config/ranger/colorschemes/gnamerica.pyo
 
 weechat/.weechat/
+
+mutt/.muttrc
