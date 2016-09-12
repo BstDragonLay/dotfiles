@@ -13,10 +13,8 @@ Plugin 'ervandew/supertab'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-surround'
 Plugin 'rip-rip/clang_complete'
 Plugin 'ervandew/matchem'
-Plugin 'kchmck/vim-coffee-script'
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim' 
@@ -87,10 +85,10 @@ autocmd BufWinEnter *.* silent loadview"
 set laststatus=2
 
 " ==== MOVEMENT ====
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-a>j
+nnoremap <C-k> <C-a>k
+nnoremap <C-l> <C-a>l
+nnoremap <C-h> <C-a>h
 inoremap jk <Esc>
 
 map <C-tab> :bn

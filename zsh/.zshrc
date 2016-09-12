@@ -125,6 +125,7 @@ alias shrl='. ~/.bashrc'
 alias zshrl='. ~/.zshrc'
 alias mux='vim ~/.tmux.conf'
 alias vimrc='vim ~/.vimrc'
+alias vim='nvim'
 
 alias s='. ~/.tmux_session.sh'
 alias muxkill='tmux kill-session -t'
