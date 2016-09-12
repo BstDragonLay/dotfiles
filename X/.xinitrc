@@ -1,8 +1,7 @@
-twmnd &
-feh --bg-scale /home/acg/Imágenes/UnixPornWPs/artsyRoom.jpg &
+/* twmnd & */
 setxkbmap -layout latam &
 setxkbmap latam &
-statusbar &
-xset -dpms &
-udiskie &
-startdwm
+/* statusbar & */
+xset -dpms 
+/* udiskie & */
+/* startdwm */

@@ -58,6 +58,8 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.zsh/.ttycolors
+
 
 # You may need to manually set your language environment
 export LANG=en_GB.utf-8
@@ -95,6 +97,7 @@ alias dev='cd ~/Documents/Dev'
 alias blog='cd ~/Documents/Dev/albertocg.github.io'
 alias repos='cd ~/Documents/Dev/GitRepos'
 alias dailies='cd ~/Dropbox/Control'
+alias startx='ssh-agent startx'
 
 alias ll='ls -lhA'
 alias ls='ls --color=auto'
@@ -152,3 +155,10 @@ export NVM_DIR="/home/acg/.nvm"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 title FSociety
+
+if ! pgrep -u $USER ssh-agent > /dev/null; then
+    ssh-agent > ~/.ssh-agent-thing
+fi
+if [[ "$SSH_AGENT_PID" == "" ]]; then
+    eval $(<~/.ssh-agent-thing)
+fi
